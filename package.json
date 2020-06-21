@@ -1,4 +1,5 @@
 {
+  "homepage": "http://gkim65.github.io/sheworks.github.io",
   "name": "sheworks",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,8 @@
     "underscore": "^1.10.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
